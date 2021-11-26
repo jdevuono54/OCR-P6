@@ -1,0 +1,32 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "toastr";
+
+html, body{
+    height: 100%;
+    background-color: $background-color-grey;
+
+    .btn-primary, .btn-primary:focus, .btn-primary:hover, .btn-primary:active {
+        color: white;
+    }
+
+    @media (min-width: 768px) {
+        .vertical-center {
+            margin-top: 40vh;
+            transform: translateY(-40%);
+        }
+    }
+
+    form{
+        label{
+            margin: 0.3rem 0;
+            font-weight: bold;
+        }
+    }
+
+    #toast-container{
+        > div:first-of-type{
+            margin-top: $nav-link-height + $nav-link-padding-y * 2;
+        }
+    }
+}

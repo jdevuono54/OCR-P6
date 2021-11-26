@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Password Reset Email Sent{% endblock %}
+
+{% block body %}
+    <div class="vertical-center">
+        <div class="container">
+            <div class="row">
+                <div class="card col-md-6 offset-md-3 p-3">
+                    <p>
+                        Un message contenant des instructions qui vous permettront de réinitialiser votre mot de passe sera envoyé à votre adresse électronique.
+                    </p>
+                    <p>Si vous ne l'avez pas encore reçu, merci de bien vouloir consulter vos SPAM ou <a href="{{ path('app_forgot_password_request') }}">réessayer</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
